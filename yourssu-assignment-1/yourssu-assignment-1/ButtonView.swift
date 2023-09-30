@@ -66,6 +66,3 @@ struct ButtonView_Previews: PreviewProvider {
         ButtonView()
     }
 }
-
-
-

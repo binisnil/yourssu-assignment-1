@@ -58,9 +58,9 @@
 				057C834A2AC410C600273482 /* yourssu_assignment_1App.swift */,
 				057C834C2AC410C600273482 /* ContentView.swift */,
 				057A199A2AC73636009063E6 /* InputView.swift */,
+				057A199C2AC73D4E009063E6 /* ButtonView.swift */,
 				057C834E2AC410C800273482 /* Assets.xcassets */,
 				057C83502AC410C800273482 /* Preview Content */,
-				057A199C2AC73D4E009063E6 /* ButtonView.swift */,
 			);
 			path = "yourssu-assignment-1";
 			sourceTree = "<group>";

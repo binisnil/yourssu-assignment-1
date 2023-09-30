@@ -13,8 +13,9 @@ struct InputView: View {
     
     var body: some View {
         VStack(spacing: 10){
-            TextField("   첫번째 숫자를 입력해주세요", text: $firstInput)
+            TextField("첫번째 숫자를 입력해주세요", text: $firstInput)
                 .frame(height: 35)
+                .padding(.leading, 17)
                 .background(Color(uiColor: .systemGray6))
                 .keyboardType(.decimalPad)
                 .cornerRadius(30)
@@ -24,8 +25,9 @@ struct InputView: View {
                         x: 0,
                         y: 4)
             
-            TextField("   두번째 숫자를 입력해주세요", text: $secondInput)
+            TextField("두번째 숫자를 입력해주세요", text: $secondInput)
                 .frame(height: 35)
+                .padding(.leading, 17)
                 .background(Color(uiColor: .systemGray6))
                 .keyboardType(.decimalPad)
                 .cornerRadius(30)
