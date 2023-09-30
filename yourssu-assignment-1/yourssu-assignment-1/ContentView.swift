@@ -12,14 +12,14 @@ struct ContentView: View {
     @State var secondInput: String = ""
 
     var body: some View {
-        VStack(spacing: 30){
+        VStack(spacing: 20){
             InputView()
             
             Text("버튼을 눌러주세요!")
                 .font(.system(size: 15))
             
             ButtonView()
-        }.padding(.horizontal, 46)
+        }.padding(.horizontal, 47)
     }
 }
 
