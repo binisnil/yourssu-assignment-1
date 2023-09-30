@@ -16,9 +16,9 @@ struct ButtonView: View {
                 Text("더하기")
                     .font(.system(size: 15))
                     .foregroundColor(Color.white)
+                    .frame(height: 39)
+                    .frame(minWidth: 0, maxWidth: .infinity)
             }
-            .frame(height: 39)
-            .frame(minWidth: 0, maxWidth: .infinity)
             .background(Color(uiColor: .systemTeal))
             .cornerRadius(30)
             
@@ -28,9 +28,9 @@ struct ButtonView: View {
                 Text("빼기")
                     .font(.system(size: 15))
                     .foregroundColor(Color.white)
+                    .frame(height: 39)
+                    .frame(minWidth: 0, maxWidth: .infinity)
             }
-            .frame(height: 39)
-            .frame(minWidth: 0, maxWidth: .infinity)
             .background(Color(uiColor: .systemTeal))
             .cornerRadius(30)
             
@@ -40,9 +40,9 @@ struct ButtonView: View {
                 Text("곱하기")
                     .font(.system(size: 15))
                     .foregroundColor(Color.white)
+                    .frame(height: 39)
+                    .frame(minWidth: 0, maxWidth: .infinity)
             }
-            .frame(height: 39)
-            .frame(minWidth: 0, maxWidth: .infinity)
             .background(Color(uiColor: .systemTeal))
             .cornerRadius(30)
             
@@ -52,9 +52,9 @@ struct ButtonView: View {
                 Text("나누기")
                     .font(.system(size: 15))
                     .foregroundColor(Color.white)
+                    .frame(height: 39)
+                    .frame(minWidth: 0, maxWidth: .infinity)
             }
-            .frame(height: 39)
-            .frame(minWidth: 0, maxWidth: .infinity)
             .background(Color(uiColor: .systemTeal))
             .cornerRadius(30)
         }
