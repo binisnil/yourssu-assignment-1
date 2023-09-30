@@ -19,7 +19,10 @@ struct ContentView: View {
                 .font(.system(size: 15))
             
             ButtonView()
-        }.padding(.horizontal, 47)
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+        .padding(.horizontal, 47)
+        .padding(.top, 157)
     }
 }
 
