@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct InputView: View {
-    @State var firstInput: String = ""
-    @State var secondInput: String = ""
+    @Binding var firstInput: String
+    @Binding var secondInput: String
     
     var body: some View {
         VStack(spacing: 10){
@@ -40,8 +40,8 @@ struct InputView: View {
     }
 }
 
-struct InputView_Previews: PreviewProvider {
-    static var previews: some View {
-        InputView()
-    }
-}
+//struct InputView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        InputView(firstInput: "", secondInput: "")
+//    }
+//}
