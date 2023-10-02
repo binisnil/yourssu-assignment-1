@@ -8,10 +8,15 @@
 import SwiftUI
 
 struct ButtonView: View {
+    
+    @Binding var firstInput: String
+    @Binding var secondInput: String
+    @Binding var resultText: String
+    
     var body: some View {
         VStack(spacing: 10) {
             Button {
-                print("덧셈 버튼 눌림!")
+                calcPlus()
             } label: {
                 Text("더하기")
                     .font(.system(size: 15))
@@ -23,7 +28,7 @@ struct ButtonView: View {
             .cornerRadius(30)
             
             Button {
-                print("뺄셈 버튼 눌림!")
+                calcMinus()
             } label: {
                 Text("빼기")
                     .font(.system(size: 15))
@@ -35,7 +40,7 @@ struct ButtonView: View {
             .cornerRadius(30)
             
             Button {
-                print("곱셈 버튼 눌림!")
+                calcMulti()
             } label: {
                 Text("곱하기")
                     .font(.system(size: 15))
@@ -47,7 +52,7 @@ struct ButtonView: View {
             .cornerRadius(30)
             
             Button {
-                print("나눗셈 버튼 눌림!")
+                calcDivide()
             } label: {
                 Text("나누기")
                     .font(.system(size: 15))
@@ -59,10 +64,66 @@ struct ButtonView: View {
             .cornerRadius(30)
         }
     }
-}
-
-struct ButtonView_Previews: PreviewProvider {
-    static var previews: some View {
-        ButtonView()
+    
+    func calcPlus() {
+        guard let firstInputToInt = Double(firstInput) else {
+            resultText = "올바른 값을 입력해주세요"
+            return
+        }
+        guard let secondInputToInt = Double(secondInput) else {
+            resultText = "올바른 값을 입력해주세요"
+            return
+        }
+        
+        let result = firstInputToInt + secondInputToInt
+        resultText = "\(firstInputToInt) + \(secondInputToInt) = \(result)"
+    }
+    
+    func calcMinus() {
+        guard let firstInputToInt = Double(firstInput) else {
+            resultText = "올바른 값을 입력해주세요"
+            return
+        }
+        guard let secondInputToInt = Double(secondInput) else {
+            resultText = "올바른 값을 입력해주세요"
+            return
+        }
+        
+        let result = firstInputToInt - secondInputToInt
+        resultText = "\(firstInputToInt) - \(secondInputToInt) = \(result)"
+    }
+    
+    func calcMulti() {
+        guard let firstInputToInt = Double(firstInput) else {
+            resultText = "올바른 값을 입력해주세요"
+            return
+        }
+        guard let secondInputToInt = Double(secondInput) else {
+            resultText = "올바른 값을 입력해주세요"
+            return
+        }
+        
+        let result = firstInputToInt * secondInputToInt
+        resultText = "\(firstInputToInt) x \(secondInputToInt) = \(result)"
+    }
+    
+    func calcDivide() {
+        guard let firstInputToInt = Double(firstInput) else {
+            resultText = "올바른 값을 입력해주세요"
+            return
+        }
+        
+        if secondInput == "0" {
+            resultText = "0으로 나눌 수 없습니다"
+            return
+        }
+        
+        guard let secondInputToInt = Double(secondInput) else {
+            resultText = "올바른 값을 입력해주세요"
+            return
+        }
+        
+        let result: Double = Double(firstInputToInt / secondInputToInt)
+        resultText = "\(firstInputToInt) / \(secondInputToInt) = \(result)"
     }
 }
