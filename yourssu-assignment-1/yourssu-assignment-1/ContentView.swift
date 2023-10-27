@@ -8,14 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var firstInput: String = ""
+    @State var secondInput: String = ""
+    @State var resultText: String = "버튼을 눌러주세요!"
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        VStack(spacing: 20){
+            InputView(firstInput: $firstInput, secondInput: $secondInput)
+            
+            Text("\(resultText)")
+                .font(.system(size: 15))
+            
+            ButtonView(firstInput: $firstInput, secondInput: $secondInput, resultText: $resultText)
         }
-        .padding()
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+        .padding(.horizontal, 47)
+        .padding(.top, 157)
     }
 }
 
