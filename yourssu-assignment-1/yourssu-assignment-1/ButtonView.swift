@@ -67,11 +67,11 @@ struct ButtonView: View {
     
     func calcPlus() {
         guard let firstInputToInt = Double(firstInput) else {
-            resultText = "올바른 값을 입력해주세요"
+            resultText = "첫 번째 입력에 올바른 값을 입력해주세요"
             return
         }
         guard let secondInputToInt = Double(secondInput) else {
-            resultText = "올바른 값을 입력해주세요"
+            resultText = "두 번째 입력에 올바른 값을 입력해주세요"
             return
         }
         
@@ -81,11 +81,11 @@ struct ButtonView: View {
     
     func calcMinus() {
         guard let firstInputToInt = Double(firstInput) else {
-            resultText = "올바른 값을 입력해주세요"
+            resultText = "첫 번째 입력에 올바른 값을 입력해주세요"
             return
         }
         guard let secondInputToInt = Double(secondInput) else {
-            resultText = "올바른 값을 입력해주세요"
+            resultText = "두 번째 입력에 올바른 값을 입력해주세요"
             return
         }
         
@@ -95,11 +95,11 @@ struct ButtonView: View {
     
     func calcMulti() {
         guard let firstInputToInt = Double(firstInput) else {
-            resultText = "올바른 값을 입력해주세요"
+            resultText = "첫 번째 입력에 올바른 값을 입력해주세요"
             return
         }
         guard let secondInputToInt = Double(secondInput) else {
-            resultText = "올바른 값을 입력해주세요"
+            resultText = "두 번째 입력에 올바른 값을 입력해주세요"
             return
         }
         
@@ -109,7 +109,7 @@ struct ButtonView: View {
     
     func calcDivide() {
         guard let firstInputToInt = Double(firstInput) else {
-            resultText = "올바른 값을 입력해주세요"
+            resultText = "첫 번째 입력에 올바른 값을 입력해주세요"
             return
         }
         
@@ -119,7 +119,7 @@ struct ButtonView: View {
         }
         
         guard let secondInputToInt = Double(secondInput) else {
-            resultText = "올바른 값을 입력해주세요"
+            resultText = "두 번째 입력에 올바른 값을 입력해주세요"
             return
         }
         

@@ -25,20 +25,6 @@ struct ContentView: View {
         .padding(.horizontal, 47)
         .padding(.top, 157)
     }
-    
-    func calcPlus() {
-        guard let firstInputToInt = Double(firstInput) else {
-            resultText = "올바른 값을 입력해주세요"
-            return
-        }
-        guard let secondInputToInt = Double(secondInput) else {
-            resultText = "올바른 값을 입력해주세요"
-            return
-        }
-        
-        var result = firstInputToInt + secondInputToInt
-        resultText = "\(firstInputToInt) + \(secondInputToInt) = \(result)"
-    }
 }
 
 struct ContentView_Previews: PreviewProvider {
